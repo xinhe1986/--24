@@ -1,0 +1,19 @@
+        // IIFE
+        (function() {
+            alert("1")
+        })( );
+        // 为变量赋值;
+        var age = "19";
+        var sex = "female";
+        var title = (function() {
+            if (age < 18) {
+                return "little guy";
+            } else {
+                if (sex == "male") {
+                    return "gentaleman";
+                } else {
+                    return "lady";
+                }
+            }
+        })();
+        alert(title);
